@@ -1,0 +1,66 @@
+.builder_customizer_spacings_outer {
+  text-align: center;
+  background: #e6e6e6;
+  border: 2px dashed #b5b5b5;
+  padding: 10px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.builder_customizer_spacings_margin {
+  position: relative;
+  padding: 40px 60px;
+}
+.builder_customizer_spacings_padding {
+  padding: 10px;
+  border: 2px solid #b5b5b5;
+  background: #dadada;
+}
+.builder_customizer_spacings_inner {
+  position: relative;
+  padding: 60px;
+}
+.builder_customizer_spacings_outer select {
+  padding: 4px;
+  width: 50px;
+  text-align: center;
+  text-align-last: center;
+  line-height: 16px;
+  border: 1px solid #bfbfbf;
+  position: absolute;
+  font-size: 12px;
+}
+.builder_customizer_spacings_inner select {
+  width: 44px;
+}
+.builder_customizer_spacings_outer .builder_customizer_spacings_top {
+  top: 0;
+  left: calc(50% - 26px);
+}
+.builder_customizer_spacings_outer .builder_customizer_spacings_right {
+  right: 0;
+  top: calc(50% - 15px);
+}
+.builder_customizer_spacings_outer .builder_customizer_spacings_bottom {
+  bottom: 0;
+  left: calc(50% - 26px);
+}
+.builder_customizer_spacings_outer .builder_customizer_spacings_left {
+  left: 0;
+  top: calc(50% - 15px);
+}
+.builder_customizer_spacings_inner .builder_customizer_spacings_top, .builder_customizer_spacings_inner .builder_customizer_spacings_bottom {
+  margin-left: 3px;
+}
+.builder_customizer_spacings_logo {
+  position: absolute;
+  left: calc(50% - 16px);
+  top: calc(50% - 16px);
+}
+.builder_customizer_spacings_outer p {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  font-size: 10px;
+}

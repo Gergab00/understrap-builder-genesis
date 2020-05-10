@@ -23,7 +23,6 @@ if (class_exists('WP_Customize_Control')) {
     }
   }
   
-  
   /* BUILDER Spacings Control */
   class BUILDER_Customize_Spacings_Control extends WP_Customize_Control {
     public $type = 'button';

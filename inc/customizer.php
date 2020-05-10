@@ -415,21 +415,6 @@ if ( ! function_exists( 'understrap_builder_customize_register' ) ) {
 				'priority'    => 197,
 			)
 		);
-    
-    // Join FB support group link
-    $wp_customize->add_section( new Skyrocket_Upsell_Section( $wp_customize, 'understrap_builder_join_fb',
-      array(
-        'title' => __( 'Join The BUILDER Facebook Group', 'understrap-builder' ),
-        'url' => 'https://www.facebook.com/groups/understrap.builder/',
-        'backgroundcolor' => '#087dcc',
-        'textcolor' => '#fff',
-        'priority' => 198,
-      )
-    ) );    
-    
-    
-    
-    
     /* ============ Add the settings ============== */
     
 
@@ -2706,20 +2691,13 @@ if ( ! function_exists( 'understrap_builder_customize_register' ) ) {
 		);
     
     // Theme comments upgrade message control
-    $wp_customize->add_control(
-			new BUILDER_Customize_upgrade_Control(
-				$wp_customize,
-				'understrap_builder_spacings_breadcrumbs_pro',
-				array(
-					'label'       => __( 'Available In PRO', 'understrap-builder' ),
-					'description' => __( 'Upgrade your BUILDER to PRO to gain access.', 'understrap-builder' ),
-					'section'     => 'understrap_builder_spacings_breadcrumbs_section',
-					'settings'    => 'understrap_builder_spacings_breadcrumbs_pro',
-          'type'        => 'button',
-					'priority'    => '5',
-				)
-			)
-		);
+		$wp_customize->add_control( new Skyrocket_Simple_Notice_Custom_control( $wp_customize, 'understrap_builder_spacings_breadcrumbs_pro',
+	array(
+		'label' => __( 'Simple Notice Control' ),
+		'description' => __('This Custom Control allows you to display a simple title and description to your users. You can even include <a href="http://google.com" target="_blank">basic html</a>.' ),
+		'section'     => 'understrap_builder_spacings_breadcrumbs_section',
+	)
+) );
     
     // Theme comments upgrade message control
     $wp_customize->add_control(

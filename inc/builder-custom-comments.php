@@ -8,9 +8,6 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-
-
-
 /* OVERRIDE UnderStrap Comment Form Fields Filter */
 
 if ( ! function_exists( 'understrap_bootstrap_comment_form_fields' ) ) {

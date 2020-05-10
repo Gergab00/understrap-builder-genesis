@@ -32,38 +32,16 @@ add_action( 'after_setup_theme', 'understrap_builder_add_child_theme_textdomain'
 
 
 /* Includes */
-require_once( trailingslashit( get_stylesheet_directory() ). 'inc/customizer.php' );
-require_once( trailingslashit( get_stylesheet_directory() ). 'inc/onpage_styles.php' );
-require_once( trailingslashit( get_stylesheet_directory() ). 'inc/builder_template_functions.php' );
-require_once( trailingslashit( get_stylesheet_directory() ). 'inc/onpage_scripts.php' );
-require_once( trailingslashit( get_stylesheet_directory() ). 'inc/additional_menus.php' );
-require_once( trailingslashit( get_stylesheet_directory() ). 'inc/builder_wpadmin_functions.php' );
-require_once( trailingslashit( get_stylesheet_directory() ). 'inc/builder_options_page.php' );
-require_once( trailingslashit( get_stylesheet_directory() ). 'inc/builder_importables.php' );
-require_once( trailingslashit( get_stylesheet_directory() ). 'inc/builder-custom-comments.php' );
-require_once( trailingslashit( get_stylesheet_directory() ). 'inc/builder_admin_bar.php' );
-require_once( trailingslashit( get_stylesheet_directory() ). 'inc/post_page_meta.php' );
-require_once( trailingslashit( get_stylesheet_directory() ). 'inc/builder_custom_customizers.php' );
+require_once( trailingslashit( get_stylesheet_directory() ). 'inc/customizer.php' ); // All BUILDER Customizer Code
+require_once( trailingslashit( get_stylesheet_directory() ). 'inc/onpage_styles.php' ); // CSS to display at top of page to override BS defaults
+require_once( trailingslashit( get_stylesheet_directory() ). 'inc/builder_template_functions.php' ); // UnderStrap BUILDER Template Functions
+require_once( trailingslashit( get_stylesheet_directory() ). 'inc/onpage_scripts.php' ); // Onpage styles to display dynamically on the front end.
+require_once( trailingslashit( get_stylesheet_directory() ). 'inc/additional_menus.php' ); //Logic for additional menus added by UnderStrap BUILDER
+require_once( trailingslashit( get_stylesheet_directory() ). 'inc/builder-custom-comments.php' ); // OVERRIDE UnderStrap Comment Form Fields Filter
+require_once( trailingslashit( get_stylesheet_directory() ). 'inc/post_page_meta.php' ); // Page attributes - show page title etc
+require_once( trailingslashit( get_stylesheet_directory() ). 'inc/builder_custom_customizers.php' ); //Additional BUILDER Customizer Classes
 
-require_once( trailingslashit( get_stylesheet_directory() ). 'inc/TGM-Plugin-Activation/class-tgm-plugin-activation.php' );
-
-require_once( trailingslashit( get_stylesheet_directory() ). 'inc/Customizer-Custom-Controls/custom-controls.php' );
-
-
-
-
-
-/* PUC Update For BUILDER*/
-// https://github.com/YahnisElsts/plugin-update-checker
-require( trailingslashit( get_stylesheet_directory() ). 'inc/plugin-update-checker.php' );
-global $BUILDERUpdateChecker;
-$BUILDERUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://understrap.com/update/understrap_builder_latest.json#'.urlencode(get_home_url()),
-	__FILE__, 
-	'understrap-builder'
-);
-
-
+require_once( trailingslashit( get_stylesheet_directory() ). 'inc/Customizer-Custom-Controls/custom-controls.php' );//Skyrocket Customizer Custom Controls - Edited by BUILDER for additional features
 
 /* Remove UnderStrap Defaults */
 function understrap_builder_remove_scripts() {

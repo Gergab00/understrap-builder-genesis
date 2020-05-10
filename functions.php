@@ -40,6 +40,7 @@ require_once( trailingslashit( get_stylesheet_directory() ). 'inc/additional_men
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/builder-custom-comments.php' ); // OVERRIDE UnderStrap Comment Form Fields Filter
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/post_page_meta.php' ); // Page attributes - show page title etc
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/builder_custom_customizers.php' ); //Additional BUILDER Customizer Classes
+require_once( trailingslashit( get_stylesheet_directory() ). 'inc/safe-svg/safe-svg.php' ); // Load support SVG imagen and Saniteze it.
 
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/Customizer-Custom-Controls/custom-controls.php' );//Skyrocket Customizer Custom Controls - Edited by BUILDER for additional features
 

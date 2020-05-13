@@ -3,7 +3,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-
 // Default globals
 global $us_b_potential_bootstrap_color_classes, $us_b_heading_sizes, $builder_default_spacings;
 $us_b_potential_bootstrap_color_classes = array('Primary'   => '#6761A8', 
@@ -22,14 +21,10 @@ $us_b_heading_sizes = array('H1' => array('default' => '2.5rem'),
                             'H6' => array('default' => '1rem'));
 $builder_default_spacings = '{"mt": "", "mr": "", "mb": "", "ml": "", "pt": "", "pr": "", "pb": "", "pl": ""}';
 
-
-
 /* Actions */
 add_action( 'wp_enqueue_scripts', 'understrap_builder_remove_scripts', 20 ); // Remove UnderStrap Defaults
 add_action( 'wp_enqueue_scripts', 'understrap_builder_enqueue_styles' ); // Add in UnderStrap BUIDLER styles & scripts
 add_action( 'after_setup_theme', 'understrap_builder_add_child_theme_textdomain' ); // Assign language folder
-
-
 
 /* Includes */
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/customizer.php' ); // All BUILDER Customizer Code
@@ -41,6 +36,9 @@ require_once( trailingslashit( get_stylesheet_directory() ). 'inc/builder-custom
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/post_page_meta.php' ); // Page attributes - show page title etc
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/builder_custom_customizers.php' ); //Additional BUILDER Customizer Classes
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/safe-svg/safe-svg.php' ); // Load support SVG imagen and Saniteze it.
+if (check_plugin_state('woocommerce')) {
+  require_once( trailingslashit( get_stylesheet_directory() ). 'inc/woo-customizer.php' ); // Load the customizer stuff for woocommerce
+}
 
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/Customizer-Custom-Controls/custom-controls.php' );//Skyrocket Customizer Custom Controls - Edited by BUILDER for additional features
 
@@ -51,8 +49,6 @@ function understrap_builder_remove_scripts() {
     wp_dequeue_script( 'understrap-scripts' );
     wp_deregister_script( 'understrap-scripts' );
 }
-
-
 
 /* Remove some UnderStrap page templates */
 function understrap_builder_remove_page_templates( $templates ) {
@@ -83,7 +79,6 @@ function understrap_builder_enqueue_styles() {
   wp_enqueue_script( 'jquery');
   wp_enqueue_script( 'child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), $the_theme->get( 'Version' ), true );
   wp_enqueue_style( 'understrap-builder-styles', get_stylesheet_directory_uri() . '/css/understrap-builder.min.css', array(), $the_theme->get( 'Version' ) );
-  wp_enqueue_script( 'understrap-builder-scripts', get_stylesheet_directory_uri() . '/js/understrap-builder.min.js', array(), $the_theme->get( 'Version' ), true );
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );
   }
@@ -133,8 +128,6 @@ function understrap_builder_allow_iframe_in_editor( $tags, $context ) {
 	return $tags;
 }
 
-
-
 /* Convert BUILDER shortcodes to live data in string */
 function understrap_builder_convert_text_date($original_string){
   $new_string_to_return = $original_string;
@@ -142,8 +135,6 @@ function understrap_builder_convert_text_date($original_string){
   $new_string_to_return = str_replace('[builder_current_year]', $this_year, $original_string);
   return $new_string_to_return;
 }
-
-
 
 /* Tidy the archive title for PRO headers */
 add_filter( 'get_the_archive_title', function ($title) {    
@@ -159,40 +150,11 @@ add_filter( 'get_the_archive_title', function ($title) {
   return $title;    
 });
 
-
-
 // Disable Post Formats for BUILDER */
 add_action('after_setup_theme', 'understrap_builder_remove_formats', 100);
 function understrap_builder_remove_formats(){
   remove_theme_support('post-formats');
 }
-
-
-
-// Suggested plugins
-add_action( 'tgmpa_register', 'understrap_builder_register_required_plugins' );
-function understrap_builder_register_required_plugins() {
-	$plugins = array(
-		array(
-			'name'      => 'Bootstrap Blocks',
-			'slug'      => 'wp-bootstrap-blocks',
-			'required'  => false
-		),
-    array(
-			'name'      => 'Contact Form 7',
-			'slug'      => 'contact-form-7',
-			'required'  => false
-		),
-    array(
-			'name'      => 'One Click Demo Import',
-			'slug'      => 'one-click-demo-import',
-			'required'  => false
-		)
-	);
-	tgmpa( $plugins, array() );
-}
-
-
 
 /**
  * Disable the emoji's
@@ -241,19 +203,15 @@ function understrap_builder_disable_emojis_remove_dns_prefetch( $urls, $relation
   return $urls;
 }
 
-
 // Remove embed.js
 function my_deregister_scripts(){
   wp_deregister_script( 'wp-embed' );
 }
 add_action( 'wp_footer', 'my_deregister_scripts' );
 
-
 /* BUILDER Image Sizes */
-
 add_image_size( 'us_b_banner', 1600, 500, true);
 add_image_size( 'us_b_button', 350, 350, true);
-
 
 /* SkyRocket Sex Up Customizer Controls */
 // https://github.com/maddisondesigns/customizer-custom-controls

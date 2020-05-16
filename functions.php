@@ -58,8 +58,6 @@ function understrap_builder_remove_page_templates( $templates ) {
 }
 add_filter( 'theme_page_templates', 'understrap_builder_remove_page_templates' );
 
-
-
 /* Remove some UnderStrap sidebar locations */
 function understrap_builder_unregister_sidebars(){
   //unregister_sidebar( 'hero' );
@@ -68,17 +66,15 @@ function understrap_builder_unregister_sidebars(){
 }
 add_action( 'widgets_init', 'understrap_builder_unregister_sidebars', 99 );
 
-
-
 /* Add in UnderStrap BUIDLER Styles & scripts */
 function understrap_builder_enqueue_styles() {
   
 	$the_theme = wp_get_theme();
   
-  wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() . '/css/child-theme.min.css', array(), $the_theme->get( 'Version' ) );
+  wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() . '/css/child-theme.css', array(), $the_theme->get( 'Version' ) );
   wp_enqueue_script( 'jquery');
-  wp_enqueue_script( 'child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), $the_theme->get( 'Version' ), true );
-  wp_enqueue_style( 'understrap-builder-styles', get_stylesheet_directory_uri() . '/css/understrap-builder.min.css', array(), $the_theme->get( 'Version' ) );
+  wp_enqueue_script( 'child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.js', array(), $the_theme->get( 'Version' ), true );
+  //wp_enqueue_style( 'understrap-builder-styles', get_stylesheet_directory_uri() . '/css/understrap-builder.min.css', array(), $the_theme->get( 'Version' ) );
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
     wp_enqueue_script( 'comment-reply' );
   }

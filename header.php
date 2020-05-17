@@ -111,8 +111,6 @@ if($understrap_builder_navbar_align == 'center'){
   $understrap_builder_navbar_align_class = 'mr-auto';
 }
 
-
-
 ?>
 <!DOCTYPE html>
 
@@ -160,7 +158,7 @@ if($understrap_builder_navbar_align == 'center'){
 
 
             <?php } else {
-              the_custom_logo();
+              genesis_custom_logo_setup();
             } ?><!-- end custom logo -->
 
             
@@ -300,7 +298,7 @@ if($understrap_builder_navbar_align == 'center'){
 
 
             <?php } else {
-              the_custom_logo();
+              genesis_custom_logo_setup();
             } ?><!-- end custom logo -->
 
           </div>
@@ -328,7 +326,7 @@ if($understrap_builder_navbar_align == 'center'){
 
 
             <?php } else {
-              the_custom_logo();
+              genesis_custom_logo_setup();
             } ?><!-- end custom logo -->
 
             
@@ -493,7 +491,7 @@ if($understrap_builder_navbar_align == 'center'){
 
 
             <?php } else {
-              the_custom_logo();
+              genesis_custom_logo_setup();
             } ?><!-- end custom logo -->
 
           </div>
@@ -558,7 +556,7 @@ if($understrap_builder_navbar_align == 'center'){
               <?php } else { ?>
 
                 <div class="text-center">
-                  <?php the_custom_logo(); ?>
+                  <?php genesis_custom_logo_setup(); ?>
                 </div>
 
               <?php } ?><!-- end custom logo -->
@@ -647,7 +645,7 @@ if($understrap_builder_navbar_align == 'center'){
               <?php } else { ?>
 
                 <div class="text-center">
-                  <?php the_custom_logo(); ?>
+                  <?php genesis_custom_logo_setup(); ?>
                 </div>
 
               <?php } ?><!-- end custom logo -->
@@ -746,7 +744,7 @@ if($understrap_builder_navbar_align == 'center'){
               <?php } else { ?>
 
                 <div class="text-center">
-                  <?php the_custom_logo(); ?>
+                  <?php genesis_custom_logo_setup(); ?>
                 </div>
 
               <?php } ?><!-- end custom logo -->

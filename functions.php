@@ -30,6 +30,7 @@ add_action( 'after_setup_theme', 'understrap_builder_add_child_theme_textdomain'
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/customizer.php' ); // All BUILDER Customizer Code
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/onpage_styles.php' ); // CSS to display at top of page to override BS defaults
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/builder_template_functions.php' ); // UnderStrap BUILDER Template Functions
+require_once( trailingslashit( get_stylesheet_directory() ). 'inc/genesis_template_functions.php' ); // UnderStrap BUILDER Genesis Template Functions
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/onpage_scripts.php' ); // Onpage styles to display dynamically on the front end.
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/additional_menus.php' ); //Logic for additional menus added by UnderStrap BUILDER
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/builder-custom-comments.php' ); // OVERRIDE UnderStrap Comment Form Fields Filter
@@ -106,7 +107,6 @@ function understrap_builder_enqueue_styles() {
 function understrap_builder_add_child_theme_textdomain() {
     load_child_theme_textdomain( 'understrap-builder', get_stylesheet_directory() . '/languages' );
 }
-
 
 /* Allow HTML in Gutenberg HTML Block */
 add_filter( 'wp_kses_allowed_html', 'understrap_builder_allow_iframe_in_editor', 10, 2 );

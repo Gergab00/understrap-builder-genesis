@@ -371,7 +371,7 @@ if (!function_exists('understrap_builder_customize_register')) {
                 'title' => __('Archives', 'understrap-builder'),
                 'capability' => 'edit_theme_options',
                 'description' => __('The layout of archive pages such as blog.', 'understrap-builder'),
-                'priority' => 186,
+                'priority' => 183,
             )
         );
 
@@ -382,7 +382,7 @@ if (!function_exists('understrap_builder_customize_register')) {
                 'title' => __('Single Post', 'understrap-builder'),
                 'capability' => 'edit_theme_options',
                 'description' => __('The layout of single posts.', 'understrap-builder'),
-                'priority' => 194,
+                'priority' => 184,
             )
         );
 
@@ -393,7 +393,7 @@ if (!function_exists('understrap_builder_customize_register')) {
                 'title' => __('Comments', 'understrap-builder'),
                 'capability' => 'edit_theme_options',
                 'description' => __('Layout and display of comments on single posts.', 'understrap-builder'),
-                'priority' => 196,
+                'priority' => 185,
             )
         );
 
@@ -401,10 +401,10 @@ if (!function_exists('understrap_builder_customize_register')) {
         $wp_customize->add_section(
             'understrap_builder_author_box_options',
             array(
-                'title' => __('Author Box', 'understrap-builder'),
+                'title' => 'Author Box',
                 'capability' => 'edit_theme_options',
                 'description' => __('Display information about the author at the end of single posts.', 'understrap-builder'),
-                'priority' => 197,
+                'priority' => 186,
             )
         );
         /* ============ Add the settings ============== */
@@ -3849,9 +3849,7 @@ if (!function_exists('understrap_builder_customize_register')) {
         $wp_customize->selective_refresh->add_partial('understrap_builder_navbar_cta_bg', array(
             'selector' => '#us_b_navbar_cta',
         ));
-
     }
-
 }
 
 /* Add in the UnderStrap BUILDER Customizer styles */
@@ -3912,7 +3910,7 @@ function understrap_builder_customize_style()
 	#accordion-section-understrap_builder_spacings_footer_section h3,
 	#accordion-panel-understrap_builder_navbar_panel h3,
 	#accordion-section-understrap_builder_navbar_submenu h3,
-	#accordion-section-understrap_builder_navbar_dropdowns h3
+	#accordion-section-understrap_builder_navbar_dropdowns h3,#accordion-section-social_icons_section h3
 	{
 		background-image: url('<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/builder-logo-mini-64-64.png') !important;
 		background-repeat: no-repeat !important;

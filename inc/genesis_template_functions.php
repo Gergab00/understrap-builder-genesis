@@ -3,6 +3,11 @@
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 
+/**
+* Add the new custom control for the theme.
+*/
+require_once( trailingslashit( get_stylesheet_directory() ). 'inc/customizer/social-media-control.php' );
+
 /* UnderStrap BUILDER Genesis Template Functions */
 /**
  *

@@ -30,13 +30,13 @@ add_action( 'after_setup_theme', 'understrap_builder_add_child_theme_textdomain'
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/customizer.php' ); // All BUILDER Customizer Code
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/onpage_styles.php' ); // CSS to display at top of page to override BS defaults
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/builder_template_functions.php' ); // UnderStrap BUILDER Template Functions
-require_once( trailingslashit( get_stylesheet_directory() ). 'inc/genesis_template_functions.php' ); // UnderStrap BUILDER Genesis Template Functions
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/onpage_scripts.php' ); // Onpage styles to display dynamically on the front end.
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/additional_menus.php' ); //Logic for additional menus added by UnderStrap BUILDER
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/builder-custom-comments.php' ); // OVERRIDE UnderStrap Comment Form Fields Filter
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/post_page_meta.php' ); // Page attributes - show page title etc
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/builder_custom_customizers.php' ); //Additional BUILDER Customizer Classes
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/safe-svg/safe-svg.php' ); // Load support SVG imagen and Saniteze it.
+require_once( trailingslashit( get_stylesheet_directory() ). 'inc/genesis_template_functions.php' ); // UnderStrap BUILDER Genesis Template Functions
 if (check_plugin_state('woocommerce')) {
   require_once( trailingslashit( get_stylesheet_directory() ). 'inc/woo-customizer.php' ); // Load the customizer stuff for woocommerce
 }

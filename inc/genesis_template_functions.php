@@ -7,6 +7,7 @@ defined('ABSPATH') || exit;
 * Add the new custom control for the theme.
 */
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/customizer/social-media-control.php' );
+require_once( trailingslashit( get_stylesheet_directory() ). 'inc/customizer/navbar-link-color.php' );
 
 /* UnderStrap BUILDER Genesis Template Functions */
 /**

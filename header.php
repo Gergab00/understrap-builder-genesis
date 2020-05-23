@@ -119,6 +119,7 @@ if ($understrap_builder_navbar_align == 'center') {
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
   <?php understrap_builder_in_head(); ?>
+  <?php navlink_color_style() ?>
 </head>
 <body <?php body_class(); ?>>
 <?php do_action('wp_body_open'); ?>
@@ -380,17 +381,17 @@ if ($understrap_builder_navbar_align == 'center') {
 
                   <!-- The WordPress Menu goes here -->
                   <?php wp_nav_menu(
-    array(
-        'theme_location' => 'primary',
-        'container_class' => 'collapse navbar-collapse',
-        'container_id' => 'navbarNavDropdown',
-        'menu_class' => 'navbar-nav ' . esc_attr($understrap_builder_navbar_align_class),
-        'fallback_cb' => '',
-        'menu_id' => 'main-menu',
-        'depth' => 2,
-        'walker' => new Understrap_WP_Bootstrap_Navwalker(),
-    )
-); ?>
+                          array(
+                            'theme_location' => 'primary',
+                            'container_class' => 'collapse navbar-collapse',
+                            'container_id' => 'navbarNavDropdown',
+                            'menu_class' => 'navbar-nav ' . esc_attr($understrap_builder_navbar_align_class),
+                            'fallback_cb' => '',
+                            'menu_id' => 'main-menu',
+                            'depth' => 2,
+                            'walker' => new Understrap_WP_Bootstrap_Navwalker(),
+                          )
+                        );?>
 
                 <?php } else { ?>
 

@@ -54,9 +54,9 @@ function navbar_link_color ($wp_customize){
 
 function navlink_color_style(){
     $bs_color_navlink = get_option( 'understrap_genesis_navbar_link_color');
-        echo '<script>';
+        /**echo '<script>';
         echo 'console.log( "Color: '.$bs_color_navlink.'")';
-        echo '</script>';
+        echo '</script>';*/
     ?>
     <style>a.nav-link {color: <?php echo $bs_color_navlink ?> !important;}</style>
     <?php

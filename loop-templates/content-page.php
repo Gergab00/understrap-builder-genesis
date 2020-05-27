@@ -33,16 +33,21 @@ $understrap_builder_override_title = get_post_meta(get_the_ID(), '_us_b_hide_tit
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
   
-  <?php if(has_post_thumbnail(get_the_ID()) && !$us_b_featured_image_already_shown){ ?>
-  <div id="us_b_page_thumb" class="<?php echo esc_attr(understrap_builder_spacings_handler($understrap_builder_spacings_page_image)); ?>">
-    <?php echo get_the_post_thumbnail(get_the_ID(), 'large'); ?>
-  </div>
-  <?php } ?>
+  <?php 
+  if(has_post_thumbnail(get_the_ID()) && !$us_b_featured_image_already_shown){ 
+    $us_b_headers_page_back_style = "background: url('".wp_get_attachment_url( get_post_thumbnail_id(get_the_ID()), 'full' )."');background-position:center;background-repeat:no-repeat;background-size:cover;";
+    ?>
+  <div id="us_b_page_thumb" class="<?php echo esc_attr(understrap_builder_spacings_handler($understrap_builder_spacings_page_image)); ?> jumbotron jumbotron-fluid" style="<?php echo esc_attr($us_b_headers_page_back_style);?>" >
+  <div class="container bg-secondary">
 
   <?php if($understrap_builder_override_title != 'hide' && !$us_b_title_shown_already){ ?>
 	<header class="entry-header <?php if($understrap_builder_headers_page=='centered'){echo ' text-center';}?>">
-		<h1 class="entry-title <?php echo esc_attr(understrap_builder_spacings_handler($understrap_builder_spacings_page_title)); ?>"><?php the_title(); ?></h1>
+		<h1 class="entry-title font-weight-bolder <?php echo esc_attr(understrap_builder_spacings_handler($understrap_builder_spacings_page_title)); ?>"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
+  <?php } ?>
+  
+  </div>
+  </div>
   <?php } ?>
 
 	<div class="entry-content">

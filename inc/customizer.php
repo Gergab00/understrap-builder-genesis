@@ -1908,6 +1908,7 @@ if (!function_exists('understrap_builder_customize_register')) {
                         'thumbs-down' => __('Thumbs Down', 'understrap-builder'),
                         'arrow-right' => __('Arrow Right', 'understrap-builder'),
                         'arrow-up' => __('Arrow Up', 'understrap-builder'),
+                        'calendar-plus'=> 'Calendar',
                     ),
                     'priority' => '32',
                     'active_callback' => function ($control) {

@@ -7,7 +7,7 @@
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
-if(!is_user_logged_in() && get_option('usblkv')!='1'){return'';}
+//if(!is_user_logged_in() && get_option('usblkv')!='1'){return'';}
 
 
   

@@ -7,7 +7,7 @@
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
-if(!is_user_logged_in() && get_option('usblkv')!='1'){return'';}
+//if(!is_user_logged_in() && get_option('usblkv')!='1'){return'';}
   
 // Load Customizer variables
 $understrap_builder_container_type = get_theme_mod( 'understrap_builder_container_type', 'container');
@@ -67,9 +67,10 @@ if($understrap_builder_breadcrumbs_single_post_align != ''){
 
 
       // BUILDER - Check for Breadcrumb Yoast
-      if(function_exists('yoast_breadcrumb') && function_exists('understrap_builder_yoast_breadcrumb')){ $us_b_breadcrumbs_show = true; ?>
+      if(function_exists('yoast_breadcrumb') /*&& function_exists('understrap_builder_yoast_breadcrumb')*/){ $us_b_breadcrumbs_show = true; ?>
         <ul class="breadcrumb<?php echo esc_attr($us_b_override_bg_color.$us_b_override_alignment); ?>"><?php
-        understrap_builder_yoast_breadcrumb();
+        //understrap_builder_yoast_breadcrumb();
+        yoast_breadcrumb( '<li id="breadcrumbs">','</li>' );
         ?></ul><?php
       }
 

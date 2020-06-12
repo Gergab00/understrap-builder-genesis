@@ -8,14 +8,19 @@ defined('ABSPATH') || exit;
 */
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/customizer/social-media-control.php' );
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/customizer/navbar-link-color.php' );
+require_once( trailingslashit( get_stylesheet_directory() ). 'inc/cluster-nav-creator/cluster-nav-creator-function.php' );
 
 /* UnderStrap BUILDER Genesis Template Functions */
 /**
  *
+ * FUNCION QUE RETORNA LA URL PARA AMAZON AFFILATES.
+ * 
  * @author Gerardo González <gergab00@hotmail.com>
- * @category FUNCION QUE RETORNA LA URL PARA AMAZON AFFILATES.
+ * @version 1.0.0
+ * @package Genesis Pluings
  * @param string $associateTag ID de AmazonAffilates
  * @return string $urlAmazon String con la URL Completa para el carrito de Amazon
+ * @license GNU General Public License v2 or lat
  *
  */
 function wc_get_checkout_url_amazon($associateTag = 'tecnologias36-20')

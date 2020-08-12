@@ -5,9 +5,11 @@ defined('ABSPATH') || exit;
 
 /**
 * Add the new custom control for the theme.
+* Agregar el control personalizado al tema.
 */
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/customizer/social-media-control.php' );
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/customizer/navbar-link-color.php' );
+require_once( trailingslashit( get_stylesheet_directory() ). 'inc/customizer/logo-size.php' );
 //require_once( trailingslashit( get_stylesheet_directory() ). 'inc/cluster-nav-creator/cluster-nav-creator-function.php' );
 
 /* UnderStrap BUILDER Genesis Template Functions */
@@ -70,7 +72,7 @@ function check_plugin_state($type = '')
  *
  */
 if (!function_exists('genesis_custom_logo_setup')) {
-    function genesis_custom_logo_setup()
+    function genesis_custom_logo_setup($width=106,$height=122)
     {
         $custom_logo_id = get_theme_mod('custom_logo');
         $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
@@ -78,7 +80,8 @@ if (!function_exists('genesis_custom_logo_setup')) {
             $html = sprintf(
                 '<a href="%1$s" class="custom-logo-link" rel="home">%2$s</a>',
                 esc_url( home_url( '/' ) ),
-                '<img src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '" width="106px" height="122px">'
+                '<img src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . 
+                '" width="'.$width.'px" height="'.$height.'px">'
             );
             echo $html;
         } else {

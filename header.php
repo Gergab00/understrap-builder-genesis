@@ -37,6 +37,9 @@ $understrap_builder_navbar_bottom_border = get_theme_mod('understrap_builder_nav
 $understrap_builder_navbar_bottom_border_color = get_theme_mod('understrap_builder_navbar_bottom_border_color', 'dark');
 $understrap_builder_mobile_navbar_breakpoint = get_theme_mod('understrap_builder_mobile_navbar_breakpoint', 'md');
 $understrap_builder_navbar_align = get_theme_mod('understrap_builder_navbar_align', '');
+$understrap_builder_logo_width = get_option( 'logo_size_width_control');
+$understrap_builder_logo_height = get_option( 'logo_size_height_control');
+
 
 global $builder_default_spacings;
 $understrap_builder_spacings_navbar = get_theme_mod('understrap_builder_spacings_navbar', $builder_default_spacings);
@@ -157,7 +160,7 @@ if ($understrap_builder_navbar_align == 'center') {
 
 
             <?php } else {
-    genesis_custom_logo_setup();
+    genesis_custom_logo_setup($understrap_builder_logo_width,$understrap_builder_logo_height);
 } ?><!-- end custom logo -->
 
 
@@ -305,7 +308,7 @@ if ($understrap_builder_navbar_align == 'center') {
 
 
             <?php } else {
-    genesis_custom_logo_setup();
+    genesis_custom_logo_setup($understrap_builder_logo_width,$understrap_builder_logo_height);
 } ?><!-- end custom logo -->
 
           </div>
@@ -333,7 +336,7 @@ if ($understrap_builder_navbar_align == 'center') {
 
 
             <?php } else {
-              genesis_custom_logo_setup();
+              genesis_custom_logo_setup($understrap_builder_logo_width,$understrap_builder_logo_height);
                   } ?><!-- end custom logo -->
 
             <div class="flex-column">
@@ -504,7 +507,7 @@ if ($understrap_builder_navbar_align == 'center') {
 
 
             <?php } else {
-    genesis_custom_logo_setup();
+    genesis_custom_logo_setup($understrap_builder_logo_width,$understrap_builder_logo_height);
 } ?><!-- end custom logo -->
 
           </div>
@@ -569,7 +572,7 @@ if ($understrap_builder_navbar_align == 'center') {
               <?php } else { ?>
 
                 <div class="text-center">
-                  <?php genesis_custom_logo_setup(); ?>
+                  <?php genesis_custom_logo_setup($understrap_builder_logo_width,$understrap_builder_logo_height); ?>
                 </div>
 
               <?php } ?><!-- end custom logo -->
@@ -660,7 +663,7 @@ if ($understrap_builder_navbar_align == 'center') {
               <?php } else { ?>
 
                 <div class="text-center">
-                  <?php genesis_custom_logo_setup(); ?>
+                  <?php genesis_custom_logo_setup($understrap_builder_logo_width,$understrap_builder_logo_height); ?>
                 </div>
 
               <?php } ?><!-- end custom logo -->
@@ -763,7 +766,7 @@ if ($understrap_builder_navbar_align == 'center') {
               <?php } else { ?>
 
                 <div class="text-center">
-                  <?php genesis_custom_logo_setup(); ?>
+                  <?php genesis_custom_logo_setup($understrap_builder_logo_width,$understrap_builder_logo_height); ?>
                 </div>
 
               <?php } ?><!-- end custom logo -->

@@ -10,12 +10,12 @@ defined( 'ABSPATH' ) || exit;
 if(!is_user_logged_in() && get_option('usblkv')!='1'){return'';}
 
 // Load Customizer breadrumbs display check before loading everything else
-$understrap_builder_breadcrumbs_home_page = get_theme_mod( 'understrap_builder_breadcrumbs_home_page', '');
-$understrap_builder_hero_layout = get_theme_mod( 'understrap_builder_hero_layout', 'disabled');
+$understrap_builder_breadcrumbs_home_page = get_option( 'understrap_builder_breadcrumbs_home_page', '');
+$understrap_builder_hero_layout = get_option( 'understrap_builder_hero_layout', 'disabled');
 
 global $builder_default_spacings;
-$understrap_builder_spacings_breadcrumbs_wrapper = get_theme_mod( 'understrap_builder_spacings_breadcrumbs_wrapper', $builder_default_spacings );
-$understrap_builder_spacings_breadcrumbs_element = get_theme_mod( 'understrap_builder_spacings_breadcrumbs_element', $builder_default_spacings );
+$understrap_builder_spacings_breadcrumbs_wrapper = get_option( 'understrap_builder_spacings_breadcrumbs_wrapper', $builder_default_spacings );
+$understrap_builder_spacings_breadcrumbs_element = get_option( 'understrap_builder_spacings_breadcrumbs_element', $builder_default_spacings );
 
 // Check to see if we should show breadcrumbs on this page
 $us_b_show_below_nav_bread = true;
@@ -26,11 +26,11 @@ if(is_front_page() && $understrap_builder_breadcrumbs_home_page == '' && $unders
 if($us_b_show_below_nav_bread){ /* PRO Breadcrumbs below navbar */
   
   // Load Customizer variables
-  $understrap_builder_container_type = get_theme_mod( 'understrap_builder_container_type', 'container');
-  $understrap_builder_container_page_type = get_theme_mod( 'understrap_builder_container_page_type', 'default');
-  $understrap_builder_breadcrumbs_container = get_theme_mod( 'understrap_builder_breadcrumbs_container', 'default');
-  $understrap_builder_breadcrumbs_page_bg = get_theme_mod( 'understrap_builder_breadcrumbs_page_bg', '');
-  $understrap_builder_breadcrumbs_page_align = get_theme_mod( 'understrap_builder_breadcrumbs_page_align', 'left');
+  $understrap_builder_container_type = get_option( 'understrap_builder_container_type', 'container');
+  $understrap_builder_container_page_type = get_option( 'understrap_builder_container_page_type', 'default');
+  $understrap_builder_breadcrumbs_container = get_option( 'understrap_builder_breadcrumbs_container', 'default');
+  $understrap_builder_breadcrumbs_page_bg = get_option( 'understrap_builder_breadcrumbs_page_bg', '');
+  $understrap_builder_breadcrumbs_page_align = get_option( 'understrap_builder_breadcrumbs_page_align', 'left');
 
   
   // Handle container

@@ -11,20 +11,20 @@ defined( 'ABSPATH' ) || exit;
 global $us_b_title_shown_already, $us_b_featured_image_already_shown;
 
 // Load Customizer variables
-$understrap_builder_container_type = get_theme_mod( 'understrap_builder_container_type', 'container');
-$understrap_builder_sidebars_show_default = get_theme_mod( 'understrap_builder_sidebars_show_default', 'right');
-$understrap_builder_sidebars_show_single = get_theme_mod( 'understrap_builder_sidebars_show_single', 'default');
-$understrap_builder_postlayout_featured_size = get_theme_mod( 'understrap_builder_postlayout_featured_size', 'large');
-$understrap_builder_postlayout_featured_pos = get_theme_mod( 'understrap_builder_postlayout_featured_pos', 'default');
-$understrap_builder_postlayout_meta_pos = get_theme_mod( 'understrap_builder_postlayout_meta_pos', 'default');
-$understrap_builder_headers_single = get_theme_mod( 'understrap_builder_headers_single', '');
-$understrap_builder_headers_single_text = get_theme_mod( 'understrap_builder_headers_single_text', '');
+$understrap_builder_container_type = get_option( 'understrap_builder_container_type', 'container');
+$understrap_builder_sidebars_show_default = get_option( 'understrap_builder_sidebars_show_default', 'right');
+$understrap_builder_sidebars_show_single = get_option( 'understrap_builder_sidebars_show_single', 'default');
+$understrap_builder_postlayout_featured_size = get_option( 'understrap_builder_postlayout_featured_size', 'large');
+$understrap_builder_postlayout_featured_pos = get_option( 'understrap_builder_postlayout_featured_pos', 'default');
+$understrap_builder_postlayout_meta_pos = get_option( 'understrap_builder_postlayout_meta_pos', 'default');
+$understrap_builder_headers_single = get_option( 'understrap_builder_headers_single', '');
+$understrap_builder_headers_single_text = get_option( 'understrap_builder_headers_single_text', '');
 
 global $builder_default_spacings;
-$understrap_builder_spacings_single_image = get_theme_mod( 'understrap_builder_spacings_single_image', $builder_default_spacings );
-$understrap_builder_spacings_single_title = get_theme_mod( 'understrap_builder_spacings_single_title', $builder_default_spacings );
-$understrap_builder_spacings_single_content = get_theme_mod( 'understrap_builder_spacings_single_content', $builder_default_spacings );
-$understrap_builder_spacings_single_meta = get_theme_mod( 'understrap_builder_spacings_single_meta', $builder_default_spacings );
+$understrap_builder_spacings_single_image = get_option( 'understrap_builder_spacings_single_image', $builder_default_spacings );
+$understrap_builder_spacings_single_title = get_option( 'understrap_builder_spacings_single_title', $builder_default_spacings );
+$understrap_builder_spacings_single_content = get_option( 'understrap_builder_spacings_single_content', $builder_default_spacings );
+$understrap_builder_spacings_single_meta = get_option( 'understrap_builder_spacings_single_meta', $builder_default_spacings );
 
 // Unique post override header meta option
 $understrap_builder_override_header = get_post_meta(get_the_ID(), '_us_b_override_header', true);

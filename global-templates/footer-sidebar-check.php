@@ -9,10 +9,10 @@
 defined( 'ABSPATH' ) || exit;
 
 // Load Customizer variables
-$understrap_builder_container_type = get_theme_mod( 'understrap_builder_container_type', 'container');
+$understrap_builder_container_type = get_option( 'understrap_builder_container_type', 'container');
 
 global $builder_default_spacings;
-$understrap_builder_spacings_footer_widgets = get_theme_mod( 'understrap_builder_spacings_footer_widgets', $builder_default_spacings );
+$understrap_builder_spacings_footer_widgets = get_option( 'understrap_builder_spacings_footer_widgets', $builder_default_spacings );
 
 ?>
 

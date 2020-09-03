@@ -10,15 +10,15 @@ defined( 'ABSPATH' ) || exit;
 if(!is_user_logged_in() && get_option('usblkv')!='1'){return'';}
 
 // Load Customizer variables
-$understrap_builder_container_type = get_theme_mod( 'understrap_builder_container_type', 'container');
-$understrap_builder_hero_layout = get_theme_mod( 'understrap_builder_hero_layout', 'disabled');
-$understrap_builder_hero_2_mobile = get_theme_mod( 'understrap_builder_hero_2_mobile', 'default');
-$understrap_builder_hero_col_1_width = get_theme_mod( 'understrap_builder_hero_col_1_width', 6);
-$understrap_builder_hero_col_2_width = get_theme_mod( 'understrap_builder_hero_col_2_width', 6);
-$understrap_builder_hero_content_1 = get_theme_mod( 'understrap_builder_hero_content_1', '');
-$understrap_builder_hero_content_2 = get_theme_mod( 'understrap_builder_hero_content_2', '');
-$understrap_builder_hero_text_class = get_theme_mod( 'understrap_builder_hero_text_class', '');
-$understrap_builder_hero_page = get_theme_mod( 'understrap_builder_hero_page', '');
+$understrap_builder_container_type = get_option( 'understrap_builder_container_type', 'container');
+$understrap_builder_hero_layout = get_option( 'understrap_builder_hero_layout', 'disabled');
+$understrap_builder_hero_2_mobile = get_option( 'understrap_builder_hero_2_mobile', 'default');
+$understrap_builder_hero_col_1_width = get_option( 'understrap_builder_hero_col_1_width', 6);
+$understrap_builder_hero_col_2_width = get_option( 'understrap_builder_hero_col_2_width', 6);
+$understrap_builder_hero_content_1 = get_option( 'understrap_builder_hero_content_1', '');
+$understrap_builder_hero_content_2 = get_option( 'understrap_builder_hero_content_2', '');
+$understrap_builder_hero_text_class = get_option( 'understrap_builder_hero_text_class', '');
+$understrap_builder_hero_page = get_option( 'understrap_builder_hero_page', '');
 
 // Handle second column mobile display
 $understrap_builder_second_col_classes = '';

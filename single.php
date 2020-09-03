@@ -11,17 +11,17 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 
 // Load Customizer variables
-$understrap_builder_container_type = get_theme_mod( 'understrap_builder_container_type', 'container');
-$understrap_builder_container_single_type = get_theme_mod( 'understrap_builder_container_single_type', 'default');
+$understrap_builder_container_type = get_option( 'understrap_builder_container_type', 'container');
+$understrap_builder_container_single_type = get_option( 'understrap_builder_container_single_type', 'default');
 
-$understrap_builder_postlayout_bg = get_theme_mod( 'understrap_builder_postlayout_bg', '');
-$understrap_builder_postlayout_text = get_theme_mod( 'understrap_builder_postlayout_text', '');
-$understrap_builder_postlayout_text_align = get_theme_mod( 'understrap_builder_postlayout_text_align', '');
-$understrap_builder_postlayout_vertical_margin = get_theme_mod( 'understrap_builder_postlayout_vertical_margin', '');
+$understrap_builder_postlayout_bg = get_option( 'understrap_builder_postlayout_bg', '');
+$understrap_builder_postlayout_text = get_option( 'understrap_builder_postlayout_text', '');
+$understrap_builder_postlayout_text_align = get_option( 'understrap_builder_postlayout_text_align', '');
+$understrap_builder_postlayout_vertical_margin = get_option( 'understrap_builder_postlayout_vertical_margin', '');
 
-$understrap_builder_breadcrumbs_single_post_display = get_theme_mod( 'understrap_builder_breadcrumbs_single_post_display', '');
+$understrap_builder_breadcrumbs_single_post_display = get_option( 'understrap_builder_breadcrumbs_single_post_display', '');
 
-$understrap_builder_comments_display = get_theme_mod( 'understrap_builder_comments_display', 1);
+$understrap_builder_comments_display = get_option( 'understrap_builder_comments_display', 1);
 
 
 // Container

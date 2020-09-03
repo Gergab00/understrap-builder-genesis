@@ -11,40 +11,40 @@
 defined('ABSPATH') || exit;
 
 // Load Customizer variables
-$understrap_builder_container_type = get_theme_mod('understrap_builder_container_type', 'container');
-$understrap_builder_container_header_type = get_theme_mod('understrap_builder_container_header_type', 'default');
-$understrap_builder_hero_layout = get_theme_mod('understrap_builder_hero_layout', 'disabled');
-$understrap_builder_hero_bg_class = get_theme_mod('understrap_builder_hero_bg_class', '');
-$understrap_builder_navbar_type = get_theme_mod('understrap_builder_navbar_type', 'left-logo');
-$understrap_builder_navbar_position = get_theme_mod('understrap_builder_navbar_position', 'default');
-$understrap_builder_submenu_type = get_theme_mod('understrap_builder_submenu_type', 'none');
-$understrap_builder_submenu_link_width = get_theme_mod('understrap_builder_submenu_link_width', 'thin');
-$understrap_builder_submenu_mobile_show = get_theme_mod('understrap_builder_submenu_mobile_show', 'disabled');
-$understrap_builder_submenu_home_show = get_theme_mod('understrap_builder_submenu_home_show', 'disabled');
-$understrap_builder_navbar_search_show = get_theme_mod('understrap_builder_navbar_search_show', 'enabled');
-$understrap_builder_navbar_cta_show = get_theme_mod('understrap_builder_navbar_cta_show', 0);
-$understrap_builder_navbar_cta_bg = get_theme_mod('understrap_builder_navbar_cta_bg', 'disabled');
-$understrap_builder_navbar_cta_text = get_theme_mod('understrap_builder_navbar_cta_text', 'Go Now');
-$understrap_builder_navbar_cta_url = get_theme_mod('understrap_builder_navbar_cta_url', '#');
-$understrap_builder_navbar_cta_fa_icon = get_theme_mod('understrap_builder_navbar_cta_fa_icon', '');
-$understrap_builder_navbar_cta_fa_icon_side = get_theme_mod('understrap_builder_navbar_cta_fa_icon_side', 'right');
-$understrap_builder_navbar_color_scheme = get_theme_mod('understrap_builder_navbar_color_scheme', 'navbar-dark');
-$understrap_builder_navbar_bg_color = get_theme_mod('understrap_builder_navbar_bg_color', 'bg-primary');
-$understrap_builder_navbar_bg_hero = get_theme_mod('understrap_builder_navbar_bg_hero', 'show');
-$understrap_builder_submenu_color_scheme = get_theme_mod('understrap_builder_submenu_color_scheme', 'navbar-dark');
-$understrap_builder_submenu_bg_color = get_theme_mod('understrap_builder_submenu_bg_color', 'bg-dark');
-$understrap_builder_navbar_bottom_border = get_theme_mod('understrap_builder_navbar_bottom_border', 'default');
-$understrap_builder_navbar_bottom_border_color = get_theme_mod('understrap_builder_navbar_bottom_border_color', 'dark');
-$understrap_builder_mobile_navbar_breakpoint = get_theme_mod('understrap_builder_mobile_navbar_breakpoint', 'md');
-$understrap_builder_navbar_align = get_theme_mod('understrap_builder_navbar_align', '');
+$understrap_builder_container_type = get_option('understrap_builder_container_type', 'container');
+$understrap_builder_container_header_type = get_option('understrap_builder_container_header_type', 'default');
+$understrap_builder_hero_layout = get_option('understrap_builder_hero_layout', 'disabled');
+$understrap_builder_hero_bg_class = get_option('understrap_builder_hero_bg_class', '');
+$understrap_builder_navbar_type = get_option('understrap_builder_navbar_type', 'left-logo');
+$understrap_builder_navbar_position = get_option('understrap_builder_navbar_position', 'default');
+$understrap_builder_submenu_type = get_option('understrap_builder_submenu_type', 'none');
+$understrap_builder_submenu_link_width = get_option('understrap_builder_submenu_link_width', 'thin');
+$understrap_builder_submenu_mobile_show = get_option('understrap_builder_submenu_mobile_show', 'disabled');
+$understrap_builder_submenu_home_show = get_option('understrap_builder_submenu_home_show', 'disabled');
+$understrap_builder_navbar_search_show = get_option('understrap_builder_navbar_search_show', 'enabled');
+$understrap_builder_navbar_cta_show = get_option('understrap_builder_navbar_cta_show', 0);
+$understrap_builder_navbar_cta_bg = get_option('understrap_builder_navbar_cta_bg', 'disabled');
+$understrap_builder_navbar_cta_text = get_option('understrap_builder_navbar_cta_text', 'Go Now');
+$understrap_builder_navbar_cta_url = get_option('understrap_builder_navbar_cta_url', '#');
+$understrap_builder_navbar_cta_fa_icon = get_option('understrap_builder_navbar_cta_fa_icon', '');
+$understrap_builder_navbar_cta_fa_icon_side = get_option('understrap_builder_navbar_cta_fa_icon_side', 'right');
+$understrap_builder_navbar_color_scheme = get_option('understrap_builder_navbar_color_scheme', 'navbar-dark');
+$understrap_builder_navbar_bg_color = get_option('understrap_builder_navbar_bg_color', 'bg-primary');
+$understrap_builder_navbar_bg_hero = get_option('understrap_builder_navbar_bg_hero', 'show');
+$understrap_builder_submenu_color_scheme = get_option('understrap_builder_submenu_color_scheme', 'navbar-dark');
+$understrap_builder_submenu_bg_color = get_option('understrap_builder_submenu_bg_color', 'bg-dark');
+$understrap_builder_navbar_bottom_border = get_option('understrap_builder_navbar_bottom_border', 'default');
+$understrap_builder_navbar_bottom_border_color = get_option('understrap_builder_navbar_bottom_border_color', 'dark');
+$understrap_builder_mobile_navbar_breakpoint = get_option('understrap_builder_mobile_navbar_breakpoint', 'md');
+$understrap_builder_navbar_align = get_option('understrap_builder_navbar_align', '');
 $understrap_builder_logo_width = get_option( 'logo_size_width_control');
 $understrap_builder_logo_height = get_option( 'logo_size_height_control');
 
 
 global $builder_default_spacings;
-$understrap_builder_spacings_navbar = get_theme_mod('understrap_builder_spacings_navbar', $builder_default_spacings);
-$understrap_builder_spacings_navbar_submenu = get_theme_mod('understrap_builder_spacings_navbar_submenu', $builder_default_spacings);
-$understrap_builder_spacings_navbar_logo = get_theme_mod('understrap_builder_spacings_navbar_logo', $builder_default_spacings);
+$understrap_builder_spacings_navbar = get_option('understrap_builder_spacings_navbar', $builder_default_spacings);
+$understrap_builder_spacings_navbar_submenu = get_option('understrap_builder_spacings_navbar_submenu', $builder_default_spacings);
+$understrap_builder_spacings_navbar_logo = get_option('understrap_builder_spacings_navbar_logo', $builder_default_spacings);
 
 // Handle container type
 if ($understrap_builder_container_header_type != 'default') {

@@ -11,14 +11,14 @@ defined( 'ABSPATH' ) || exit;
 global $us_b_title_shown_already, $us_b_featured_image_already_shown;
 
 // Load Customizer variables
-$understrap_builder_headers_page = get_theme_mod( 'understrap_builder_headers_page', '');
-$understrap_builder_headers_page_text = get_theme_mod( 'understrap_builder_headers_page_text', '');
+$understrap_builder_headers_page = get_option( 'understrap_builder_headers_page', '');
+$understrap_builder_headers_page_text = get_option( 'understrap_builder_headers_page_text', '');
 
 global $builder_default_spacings;
-$understrap_builder_spacings_page_image = get_theme_mod( 'understrap_builder_spacings_page_image', $builder_default_spacings );
-$understrap_builder_spacings_page_title = get_theme_mod( 'understrap_builder_spacings_page_title', $builder_default_spacings );
-$understrap_builder_spacings_page_content = get_theme_mod( 'understrap_builder_spacings_page_content', $builder_default_spacings );
-$understrap_builder_spacings_page_meta = get_theme_mod( 'understrap_builder_spacings_page_meta', $builder_default_spacings );
+$understrap_builder_spacings_page_image = get_option( 'understrap_builder_spacings_page_image', $builder_default_spacings );
+$understrap_builder_spacings_page_title = get_option( 'understrap_builder_spacings_page_title', $builder_default_spacings );
+$understrap_builder_spacings_page_content = get_option( 'understrap_builder_spacings_page_content', $builder_default_spacings );
+$understrap_builder_spacings_page_meta = get_option( 'understrap_builder_spacings_page_meta', $builder_default_spacings );
 
 // Unique page override header meta option
 $understrap_builder_override_header = get_post_meta(get_the_ID(), '_us_b_override_header', true);

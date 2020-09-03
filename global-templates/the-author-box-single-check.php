@@ -12,14 +12,14 @@ if(!is_user_logged_in() && get_option('usblkv')!='1'){return'';}
 
 
 // Load Customizer variables
-$understrap_builder_author_box_single_style = get_theme_mod( 'understrap_builder_author_box_single_style', '');
-$understrap_builder_author_box_single_align = get_theme_mod( 'understrap_builder_author_box_single_align', '');
+$understrap_builder_author_box_single_style = get_option( 'understrap_builder_author_box_single_style', '');
+$understrap_builder_author_box_single_align = get_option( 'understrap_builder_author_box_single_align', '');
 
 global $builder_default_spacings;
-$understrap_builder_spacings_author_outer = get_theme_mod( 'understrap_builder_spacings_author_outer', $builder_default_spacings );
-$understrap_builder_spacings_author_name = get_theme_mod( 'understrap_builder_spacings_author_name', $builder_default_spacings );
-$understrap_builder_spacings_author_desc = get_theme_mod( 'understrap_builder_spacings_author_desc', $builder_default_spacings );
-$understrap_builder_spacings_author_links = get_theme_mod( 'understrap_builder_spacings_author_links', $builder_default_spacings );
+$understrap_builder_spacings_author_outer = get_option( 'understrap_builder_spacings_author_outer', $builder_default_spacings );
+$understrap_builder_spacings_author_name = get_option( 'understrap_builder_spacings_author_name', $builder_default_spacings );
+$understrap_builder_spacings_author_desc = get_option( 'understrap_builder_spacings_author_desc', $builder_default_spacings );
+$understrap_builder_spacings_author_links = get_option( 'understrap_builder_spacings_author_links', $builder_default_spacings );
 
 // Unique page override header meta option
 $understrap_builder_override_author_box = get_post_meta(get_the_ID(), '_us_b_hide_author_box', true);

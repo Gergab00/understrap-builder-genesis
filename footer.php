@@ -12,20 +12,20 @@ defined( 'ABSPATH' ) || exit;
 
 
 // Load Customizer variables
-$understrap_builder_container_type = get_theme_mod( 'understrap_builder_container_type', 'container');
-$understrap_builder_container_footer_type = get_theme_mod( 'understrap_builder_container_footer_type', 'default');
-$understrap_builder_footer_text_left = get_theme_mod( 'understrap_builder_footer_text_left', '<img class="alignnone wp-image-16" src="https://understrap.com/builder-logo-mini-64-64.png" alt="UnderStrap BUILDER Logo" width="24" height="24">&nbsp; Powered By <a href="https://understrap.com/builder/">UnderStrap BUILDER</a>.' );
-$understrap_builder_footer_text_right = get_theme_mod( 'understrap_builder_footer_text_right', '<p style="text-align: right;">Copyright [builder_current_year]</p>' );
-$understrap_builder_footer_widgets_enable = get_theme_mod( 'understrap_builder_footer_widgets_enable', 0);
-$understrap_builder_footer_bg_color = get_theme_mod( 'understrap_builder_footer_bg_color', '' );
-$understrap_builder_footer_border = get_theme_mod( 'understrap_builder_footer_border', '' );
-$understrap_builder_footer_border_color = get_theme_mod( 'understrap_builder_footer_border_color', 'primary' );
-$understrap_builder_footer_text_color = get_theme_mod( 'understrap_builder_footer_text_color', '' );
-$understrap_builder_footer_menu_align = get_theme_mod( 'understrap_builder_footer_menu_align', 'default' );
+$understrap_builder_container_type = get_option( 'understrap_builder_container_type', 'container');
+$understrap_builder_container_footer_type = get_option( 'understrap_builder_container_footer_type', 'default');
+$understrap_builder_footer_text_left = get_option( 'understrap_builder_footer_text_left', '<img class="alignnone wp-image-16" src="https://understrap.com/builder-logo-mini-64-64.png" alt="UnderStrap BUILDER Logo" width="24" height="24">&nbsp; Powered By <a href="https://understrap.com/builder/">UnderStrap BUILDER</a>.' );
+$understrap_builder_footer_text_right = get_option( 'understrap_builder_footer_text_right', '<p style="text-align: right;">Copyright [builder_current_year]</p>' );
+$understrap_builder_footer_widgets_enable = get_option( 'understrap_builder_footer_widgets_enable', 0);
+$understrap_builder_footer_bg_color = get_option( 'understrap_builder_footer_bg_color', '' );
+$understrap_builder_footer_border = get_option( 'understrap_builder_footer_border', '' );
+$understrap_builder_footer_border_color = get_option( 'understrap_builder_footer_border_color', 'primary' );
+$understrap_builder_footer_text_color = get_option( 'understrap_builder_footer_text_color', '' );
+$understrap_builder_footer_menu_align = get_option( 'understrap_builder_footer_menu_align', 'default' );
 
 global $builder_default_spacings;
-$understrap_builder_spacings_footer_menu = get_theme_mod( 'understrap_builder_spacings_footer_menu', $builder_default_spacings );
-$understrap_builder_spacings_footer_text_bar = get_theme_mod( 'understrap_builder_spacings_footer_text_bar', $builder_default_spacings );
+$understrap_builder_spacings_footer_menu = get_option( 'understrap_builder_spacings_footer_menu', $builder_default_spacings );
+$understrap_builder_spacings_footer_text_bar = get_option( 'understrap_builder_spacings_footer_text_bar', $builder_default_spacings );
 
 
 // Handle container type

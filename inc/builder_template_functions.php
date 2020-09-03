@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 function understrap_builder_in_head(){
   
   // Load Customizer variables
-  $understrap_builder_add_head = get_theme_mod( 'understrap_builder_add_head', '');
+  $understrap_builder_add_head = get_option( 'understrap_builder_add_head', '');
   
   // Customizer HEAD content
   echo $understrap_builder_add_head;
@@ -24,8 +24,8 @@ function understrap_builder_in_head(){
 function understrap_builder_after_footer(){
   
   // Load Customizer variables
-  $understrap_builder_add_footer = get_theme_mod( 'understrap_builder_add_footer', '');
-  $understrap_builder_js = get_theme_mod( 'understrap_builder_js', '');
+  $understrap_builder_add_footer = get_option( 'understrap_builder_add_footer', '');
+  $understrap_builder_js = get_option( 'understrap_builder_js', '');
   
   // Customizer after /BODY content
   echo $understrap_builder_add_footer;
@@ -46,7 +46,7 @@ function understrap_builder_after_footer(){
 add_action( 'pre_get_posts', 'understrap_builder_posts_limit' );
 function understrap_builder_posts_limit( $query ) {
   if($query->is_main_query() && !is_admin()){
-    $understrap_builder_archives_posts_per_page = get_theme_mod( 'understrap_builder_archives_posts_per_page', 10);
+    $understrap_builder_archives_posts_per_page = get_option( 'understrap_builder_archives_posts_per_page', 10);
     $query->set('posts_per_page', esc_attr($understrap_builder_archives_posts_per_page));
   }
 }
@@ -77,7 +77,7 @@ function understrap_builder_spacings_handler($us_b_spacings_string){
 add_filter( 'get_custom_logo', 'understrap_builder_custom_logo' );
 function understrap_builder_custom_logo($html) {
   global $builder_default_spacings;
-  $understrap_builder_spacings_navbar_logo = get_theme_mod( 'understrap_builder_spacings_navbar_logo', $builder_default_spacings );
+  $understrap_builder_spacings_navbar_logo = get_option( 'understrap_builder_spacings_navbar_logo', $builder_default_spacings );
   $html = str_replace( 'custom-logo-link', 'custom-logo-link '.esc_attr(understrap_builder_spacings_handler($understrap_builder_spacings_navbar_logo)), $html );
   return $html;
 }

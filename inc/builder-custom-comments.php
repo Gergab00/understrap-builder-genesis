@@ -15,7 +15,7 @@ if ( ! function_exists( 'understrap_bootstrap_comment_form_fields' ) ) {
 	function understrap_bootstrap_comment_form_fields( $fields ) {
     
     // Load Customizer options
-    $understrap_builder_comments_form_layout = get_theme_mod( 'understrap_builder_comments_form_layout', '');
+    $understrap_builder_comments_form_layout = get_option( 'understrap_builder_comments_form_layout', '');
     
 		$commenter = wp_get_current_commenter();
 		$req       = get_option( 'require_name_email' );
@@ -67,9 +67,9 @@ if ( ! function_exists( 'understrap_bootstrap_comment_form' ) ) {
 	function understrap_bootstrap_comment_form( $args ) {
     
     // Load Customizer options
-    $understrap_builder_comments_button_class = get_theme_mod( 'understrap_builder_comments_button_class', 'secondary');
-    $understrap_builder_comments_label = get_theme_mod( 'understrap_builder_comments_label', 'comment');
-    $understrap_builder_comments_form_title = get_theme_mod( 'understrap_builder_comments_form_title', 'Leave a Reply');
+    $understrap_builder_comments_button_class = get_option( 'understrap_builder_comments_button_class', 'secondary');
+    $understrap_builder_comments_label = get_option( 'understrap_builder_comments_label', 'comment');
+    $understrap_builder_comments_form_title = get_option( 'understrap_builder_comments_form_title', 'Leave a Reply');
     
 		$args['comment_field'] = '<div class="form-group comment-form-comment">
 	    <label for="comment">' . _x( ucfirst(esc_attr($understrap_builder_comments_label)), 'noun', 'understrap-builder' ) . ( ' <span class="required">*</span>' ) . '</label>

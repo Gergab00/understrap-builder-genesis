@@ -414,7 +414,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_type',
             array(
                 'default' => 'left-logo',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -426,7 +426,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_position',
             array(
                 'default' => 'default',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -438,7 +438,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_align',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -450,7 +450,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_color_scheme',
             array(
                 'default' => 'navbar-dark',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -462,7 +462,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_bg_color',
             array(
                 'default' => 'bg-primary',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -474,7 +474,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_bg_hero',
             array(
                 'default' => 'show',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'sanitize_text_field',
                 'capability' => 'edit_theme_options',
             )
@@ -485,7 +485,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_search_show',
             array(
                 'default' => 0,
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_switch_sanitization',
                 'capability' => 'edit_theme_options',
@@ -497,7 +497,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_cta_show',
             array(
                 'default' => 0,
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_switch_sanitization',
                 'capability' => 'edit_theme_options',
@@ -509,7 +509,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_cta_bg',
             array(
                 'default' => 'disabled',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -521,7 +521,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_cta_text',
             array(
                 'default' => 'Go Now',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'sanitize_text_field',
                 'capability' => 'edit_theme_options',
             )
@@ -532,7 +532,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_cta_url',
             array(
                 'default' => '#',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'sanitize_text_field',
                 'capability' => 'edit_theme_options',
             )
@@ -543,7 +543,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_cta_fa_icon',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'sanitize_text_field',
                 'capability' => 'edit_theme_options',
             )
@@ -555,7 +555,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             array(
                 'default' => 'right',
                 'transport' => 'refresh',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
             )
@@ -566,7 +566,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_submenu_type',
             array(
                 'default' => 'none',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -578,7 +578,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_submenu_link_width',
             array(
                 'default' => 'thin',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -590,7 +590,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_submenu_mobile_show',
             array(
                 'default' => 0,
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_switch_sanitization',
                 'capability' => 'edit_theme_options',
@@ -603,7 +603,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             array(
                 'default' => 0,
                 'transport' => 'refresh',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'skyrocket_switch_sanitization',
                 'capability' => 'edit_theme_options',
             )
@@ -614,7 +614,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_submenu_color_scheme',
             array(
                 'default' => 'navbar-dark',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -626,7 +626,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_submenu_bg_color',
             array(
                 'default' => 'bg-dark',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -638,7 +638,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_bottom_border',
             array(
                 'default' => 'default',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'sanitize_text_field',
                 'capability' => 'edit_theme_options',
             )
@@ -649,7 +649,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_bottom_border_color',
             array(
                 'default' => 'dark',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -661,7 +661,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_dropdown_border_on',
             array(
                 'default' => 1,
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_switch_sanitization',
                 'capability' => 'edit_theme_options',
@@ -673,7 +673,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_dropdown_border_radius',
             array(
                 'default' => 5,
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_sanitize_integer',
                 'capability' => 'edit_theme_options',
@@ -685,7 +685,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_dropdown_bg',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -697,7 +697,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_dropdown_custom_bg',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'sanitize_hex_color',
                 'capability' => 'edit_theme_options',
@@ -709,7 +709,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_dropdown_border',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -721,7 +721,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_dropdown_custom_border',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'sanitize_hex_color',
                 'capability' => 'edit_theme_options',
@@ -733,7 +733,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_dropdown_link',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -745,7 +745,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_dropdown_custom_link',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'sanitize_hex_color',
                 'capability' => 'edit_theme_options',
@@ -757,7 +757,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_dropdown_link_hover',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -769,7 +769,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_dropdown_custom_link_hover',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'sanitize_hex_color',
                 'capability' => 'edit_theme_options',
@@ -781,7 +781,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_dropdown_bg_hover',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -793,7 +793,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_dropdown_custom_bg_hover',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'sanitize_hex_color',
                 'capability' => 'edit_theme_options',
@@ -805,7 +805,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_navbar_scroll_switch',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_switch_sanitization',
                 'capability' => 'edit_theme_options',
@@ -817,7 +817,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_container_type',
             array(
                 'default' => 'container',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -829,7 +829,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_container_width',
             array(
                 'default' => '1140',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_sanitize_integer',
                 'capability' => 'edit_theme_options',
@@ -841,7 +841,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_container_page_type',
             array(
                 'default' => 'default',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -853,7 +853,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_container_single_type',
             array(
                 'default' => 'default',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -865,7 +865,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_container_archive_type',
             array(
                 'default' => 'default',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -877,7 +877,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_container_header_type',
             array(
                 'default' => 'default',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -889,7 +889,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_container_footer_type',
             array(
                 'default' => 'default',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -901,7 +901,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_spacings_navbar_logo',
             array(
                 'default' => $builder_default_spacings,
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'understrap_builder_sanitize_spacings',
                 'capability' => 'edit_theme_options',
@@ -913,7 +913,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_spacings_navbar',
             array(
                 'default' => $builder_default_spacings,
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'understrap_builder_sanitize_spacings',
                 'capability' => 'edit_theme_options',
@@ -925,7 +925,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_spacings_navbar_submenu',
             array(
                 'default' => $builder_default_spacings,
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'understrap_builder_sanitize_spacings',
                 'capability' => 'edit_theme_options',
@@ -937,7 +937,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_spacings_footer_widgets',
             array(
                 'default' => $builder_default_spacings,
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'understrap_builder_sanitize_spacings',
                 'capability' => 'edit_theme_options',
@@ -949,7 +949,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_spacings_footer_menu',
             array(
                 'default' => $builder_default_spacings,
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'understrap_builder_sanitize_spacings',
                 'capability' => 'edit_theme_options',
@@ -961,7 +961,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_spacings_footer_text_bar',
             array(
                 'default' => $builder_default_spacings,
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'understrap_builder_sanitize_spacings',
                 'capability' => 'edit_theme_options',
@@ -1033,7 +1033,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_bs_color_default',
             array(
                 'default' => 'default',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -1049,7 +1049,7 @@ if (!function_exists('understrap_builder_customize_register')) {
                 'understrap_builder_bs_color_' . $bs_color_lower,
                 array(
                     'default' => $bs_color_default,
-                    'type' => 'theme_mod',
+                    'type' => 'option',
                     'sanitize_callback' => 'sanitize_hex_color',
                     'capability' => 'edit_theme_options',
                 )
@@ -1062,7 +1062,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_typography_default_font',
             array(
                 'default' => '{"font":"Open Sans","regularweight":"regular","italicweight":"italic","boldweight":"700","category":"sans-serif"}',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'skyrocket_google_font_sanitization',
                 'capability' => 'edit_theme_options',
             )
@@ -1073,7 +1073,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_typography_heading_font_custom',
             array(
                 'default' => 0,
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_switch_sanitization',
                 'capability' => 'edit_theme_options',
@@ -1085,7 +1085,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_typography_heading_font',
             array(
                 'default' => '{"font":"Open Sans","regularweight":"regular","italicweight":"italic","boldweight":"700","category":"sans-serif"}',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'skyrocket_google_font_sanitization',
                 'capability' => 'edit_theme_options',
             )
@@ -1096,7 +1096,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_typography_font_size',
             array(
                 'default' => '1rem',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'sanitize_text_field',
                 'capability' => 'edit_theme_options',
             )
@@ -1107,7 +1107,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_typography_font_size',
             array(
                 'default' => '1rem',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
             )
@@ -1118,7 +1118,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_typography_heading_font_default',
             array(
                 'default' => 0,
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -1132,7 +1132,7 @@ if (!function_exists('understrap_builder_customize_register')) {
                 'understrap_builder_typography_heading_font_' . $heading_size_lower,
                 array(
                     'default' => $heading_settings['default'],
-                    'type' => 'theme_mod',
+                    'type' => 'option',
                     'sanitize_callback' => 'sanitize_text_field',
                     'capability' => 'edit_theme_options',
                 )
@@ -1145,7 +1145,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_typography_default_line_height',
             array(
                 'default' => '1.5',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
             )
@@ -1156,7 +1156,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_typography_default_heading_line_height',
             array(
                 'default' => '1.2',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
             )
@@ -1167,7 +1167,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_typography_default_p_margin_bottom',
             array(
                 'default' => '1rem',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
             )
@@ -1178,7 +1178,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_links_color',
             array(
                 'default' => '#7c008c',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'sanitize_hex_color',
                 'capability' => 'edit_theme_options',
             )
@@ -1189,7 +1189,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_links_decoration',
             array(
                 'default' => 'none',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -1201,7 +1201,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_links_rollover_color',
             array(
                 'default' => '#380040',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'sanitize_hex_color',
                 'capability' => 'edit_theme_options',
             )
@@ -1212,7 +1212,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_links_rollover_weight',
             array(
                 'default' => 'normal',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -1224,7 +1224,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_links_rollover_decoration',
             array(
                 'default' => 'underline',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -1236,7 +1236,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_buttons_curved_borders',
             array(
                 'default' => '0.25rem',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -1248,7 +1248,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_buttons_shadow',
             array(
                 'default' => 'none',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -1260,7 +1260,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_buttons_rollover',
             array(
                 'default' => 'none',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'sanitize_text_field',
                 'capability' => 'edit_theme_options',
             )
@@ -1341,7 +1341,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_sidebars_show_default',
             array(
                 'default' => 'right',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -1353,7 +1353,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_sidebars_show_single',
             array(
                 'default' => 'default',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -1365,7 +1365,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_sidebars_show_page',
             array(
                 'default' => 'default',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -1377,7 +1377,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_sidebars_show_archive',
             array(
                 'default' => 'default',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
@@ -1389,7 +1389,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_sidebars_single_width',
             array(
                 'default' => '4',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'sanitize_text_field',
                 'capability' => 'edit_theme_options',
             )
@@ -1400,7 +1400,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_sidebars_dual_width',
             array(
                 'default' => '3',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'sanitize_text_field',
                 'capability' => 'edit_theme_options',
             )
@@ -1411,7 +1411,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_sidebars_widget_margin',
             array(
                 'default' => 'default',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'skyrocket_text_sanitization',
                 'capability' => 'edit_theme_options',
             )
@@ -1442,7 +1442,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_footer_widgets_enable',
             array(
                 'default' => 0,
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'sanitize_text_field',
                 'capability' => 'edit_theme_options',
             )
@@ -1453,7 +1453,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_footer_text_color',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'sanitize_text_field',
                 'capability' => 'edit_theme_options',
             )
@@ -1464,7 +1464,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_footer_bg_color',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'sanitize_text_field',
                 'capability' => 'edit_theme_options',
             )
@@ -1475,7 +1475,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_footer_border',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'sanitize_text_field',
                 'capability' => 'edit_theme_options',
             )
@@ -1486,7 +1486,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_footer_border_color',
             array(
                 'default' => 'primary',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'sanitize_text_field',
                 'capability' => 'edit_theme_options',
             )
@@ -1497,7 +1497,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_footer_bg_img',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'sanitize_url',
                 'capability' => 'edit_theme_options',
             )
@@ -1508,7 +1508,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_footer_bg_img_fixed',
             array(
                 'default' => 'default',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'sanitize_text_field',
                 'capability' => 'edit_theme_options',
             )
@@ -1519,7 +1519,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_footer_text_left',
             array(
                 'default' => 'Powered By <a href="https://understrap.com/builder/">UnderStrap BUILDER</a>.',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'wp_kses_post',
                 'capability' => 'edit_theme_options',
@@ -1531,7 +1531,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_footer_text_right',
             array(
                 'default' => 'Copyright [builder_current_year]',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'transport' => 'refresh',
                 'sanitize_callback' => 'wp_kses_post',
                 'capability' => 'edit_theme_options',
@@ -1543,7 +1543,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_footer_menu_align',
             array(
                 'default' => 'default',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'sanitize_callback' => 'sanitize_text_field',
                 'capability' => 'edit_theme_options',
             )
@@ -1554,7 +1554,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_js',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'capability' => 'edit_theme_options',
             )
         );
@@ -1564,7 +1564,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_add_head',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'capability' => 'edit_theme_options',
             )
         );
@@ -1574,7 +1574,7 @@ if (!function_exists('understrap_builder_customize_register')) {
             'understrap_builder_add_footer',
             array(
                 'default' => '',
-                'type' => 'theme_mod',
+                'type' => 'option',
                 'capability' => 'edit_theme_options',
             )
         );
@@ -4053,14 +4053,14 @@ function understrap_builder_customize_style()
 
 	<?php // Dynamic BS color classes for Customizer options
     global $us_b_potential_bootstrap_color_classes;
-    $understrap_builder_bs_color_default = get_theme_mod('understrap_builder_bs_color_default', 'default');
+    $understrap_builder_bs_color_default = get_option('understrap_builder_bs_color_default', 'default');
 
     if ($understrap_builder_bs_color_default != 'default') {
 
         // Theme layout BS color BG classes controls - custom colors
         foreach ($us_b_potential_bootstrap_color_classes as $bs_color => $bs_color_default) {
             $bs_color_lower = strtolower($bs_color);
-            $understrap_builder_bs_color_default = get_theme_mod('understrap_builder_bs_color_' . $bs_color_lower, $bs_color_default);
+            $understrap_builder_bs_color_default = get_option('understrap_builder_bs_color_' . $bs_color_lower, $bs_color_default);
 
             if ($bs_color_lower == 'light') {
                 // Dark text for light background

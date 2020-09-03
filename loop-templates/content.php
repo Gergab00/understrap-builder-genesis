@@ -10,23 +10,23 @@ defined( 'ABSPATH' ) || exit;
 
 
 // Load Customizer variables
-$understrap_builder_archives_cols = get_theme_mod( 'understrap_builder_archives_cols', '1');
-$understrap_builder_container_type = get_theme_mod( 'understrap_builder_container_type', 'container');
-$understrap_builder_container_archive_type = get_theme_mod( 'understrap_builder_container_archive_type', 'default');
-$understrap_builder_archives_post_title = get_theme_mod( 'understrap_builder_archives_post_title', 'ontop');
-$understrap_builder_archives_post_excerpt = get_theme_mod( 'understrap_builder_archives_post_excerpt', 'below-excerpt');
-$understrap_builder_archives_post_excerpt_length = get_theme_mod( 'understrap_builder_archives_post_excerpt_length', '40');
-$understrap_builder_archives_post_meta = get_theme_mod( 'understrap_builder_archives_post_meta', 'ontop');
-$understrap_builder_archives_post_title_heading = get_theme_mod( 'understrap_builder_archives_post_title_heading', 'h2');
-$understrap_builder_archives_post_title_color = get_theme_mod( 'understrap_builder_archives_post_title_color', '');
-$understrap_builder_archives_post_read_more = get_theme_mod( 'understrap_builder_archives_post_read_more', '');
-$understrap_builder_archives_post_read_more_text = get_theme_mod( 'understrap_builder_archives_post_read_more_text', '');
-$understrap_builder_archives_image_clickable = get_theme_mod( 'understrap_builder_archives_image_clickable', 0);
-$understrap_builder_archives_post_background = get_theme_mod( 'understrap_builder_archives_post_background', '');
-$understrap_builder_archives_post_text_color = get_theme_mod( 'understrap_builder_archives_post_text_color', '');
-$understrap_builder_archives_post_category = get_theme_mod( 'understrap_builder_archives_post_category', '');
-$understrap_builder_archives_post_margin_bottom = get_theme_mod( 'understrap_builder_archives_post_margin_bottom', 'mb-3');
-$understrap_builder_archives_post_padding_sides = get_theme_mod( 'understrap_builder_archives_post_padding_sides', '');
+$understrap_builder_archives_cols = get_option( 'understrap_builder_archives_cols', '1');
+$understrap_builder_container_type = get_option( 'understrap_builder_container_type', 'container');
+$understrap_builder_container_archive_type = get_option( 'understrap_builder_container_archive_type', 'default');
+$understrap_builder_archives_post_title = get_option( 'understrap_builder_archives_post_title', 'ontop');
+$understrap_builder_archives_post_excerpt = get_option( 'understrap_builder_archives_post_excerpt', 'below-excerpt');
+$understrap_builder_archives_post_excerpt_length = get_option( 'understrap_builder_archives_post_excerpt_length', '40');
+$understrap_builder_archives_post_meta = get_option( 'understrap_builder_archives_post_meta', 'ontop');
+$understrap_builder_archives_post_title_heading = get_option( 'understrap_builder_archives_post_title_heading', 'h2');
+$understrap_builder_archives_post_title_color = get_option( 'understrap_builder_archives_post_title_color', '');
+$understrap_builder_archives_post_read_more = get_option( 'understrap_builder_archives_post_read_more', '');
+$understrap_builder_archives_post_read_more_text = get_option( 'understrap_builder_archives_post_read_more_text', '');
+$understrap_builder_archives_image_clickable = get_option( 'understrap_builder_archives_image_clickable', 0);
+$understrap_builder_archives_post_background = get_option( 'understrap_builder_archives_post_background', '');
+$understrap_builder_archives_post_text_color = get_option( 'understrap_builder_archives_post_text_color', '');
+$understrap_builder_archives_post_category = get_option( 'understrap_builder_archives_post_category', '');
+$understrap_builder_archives_post_margin_bottom = get_option( 'understrap_builder_archives_post_margin_bottom', 'mb-3');
+$understrap_builder_archives_post_padding_sides = get_option( 'understrap_builder_archives_post_padding_sides', '');
 
 
 // Handle container for image sizes

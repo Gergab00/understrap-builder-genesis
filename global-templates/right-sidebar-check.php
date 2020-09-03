@@ -10,13 +10,13 @@ defined( 'ABSPATH' ) || exit;
 
 
 // Load Customizer variables
-$understrap_builder_sidebars_show_default = get_theme_mod( 'understrap_builder_sidebars_show_default', 'right');
-$understrap_builder_sidebars_show_page = get_theme_mod( 'understrap_builder_sidebars_show_page', 'default');
-$understrap_builder_sidebars_show_single = get_theme_mod( 'understrap_builder_sidebars_show_single', 'default');
-$understrap_builder_sidebars_show_archive = get_theme_mod( 'understrap_builder_sidebars_show_archive', 'default');
-$understrap_builder_sidebars_single_width = get_theme_mod( 'understrap_builder_sidebars_single_width', '4');
-$understrap_builder_sidebars_dual_width = get_theme_mod( 'understrap_builder_sidebars_dual_width', '3');
-$understrap_builder_sidebars_widget_margin = get_theme_mod( 'understrap_builder_sidebars_widget_margin', 'default');
+$understrap_builder_sidebars_show_default = get_option( 'understrap_builder_sidebars_show_default', 'right');
+$understrap_builder_sidebars_show_page = get_option( 'understrap_builder_sidebars_show_page', 'default');
+$understrap_builder_sidebars_show_single = get_option( 'understrap_builder_sidebars_show_single', 'default');
+$understrap_builder_sidebars_show_archive = get_option( 'understrap_builder_sidebars_show_archive', 'default');
+$understrap_builder_sidebars_single_width = get_option( 'understrap_builder_sidebars_single_width', '4');
+$understrap_builder_sidebars_dual_width = get_option( 'understrap_builder_sidebars_dual_width', '3');
+$understrap_builder_sidebars_widget_margin = get_option( 'understrap_builder_sidebars_widget_margin', 'default');
 
 // Apply defaults
 if($understrap_builder_sidebars_show_page == 'default'){

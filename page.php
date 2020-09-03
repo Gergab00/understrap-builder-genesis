@@ -18,9 +18,9 @@ global $us_b_featured_image_already_shown;
 get_header();
 
 // Load Customizer variables
-$understrap_builder_container_type = get_theme_mod( 'understrap_builder_container_type', 'container');
-$understrap_builder_container_page_type = get_theme_mod( 'understrap_builder_container_page_type', 'default');
-$understrap_builder_breadcrumbs_page_display = get_theme_mod( 'understrap_builder_breadcrumbs_page_display', '');
+$understrap_builder_container_type = get_option( 'understrap_builder_container_type', 'container');
+$understrap_builder_container_page_type = get_option( 'understrap_builder_container_page_type', 'default');
+$understrap_builder_breadcrumbs_page_display = get_option( 'understrap_builder_breadcrumbs_page_display', '');
 
 // Handle container
 if($understrap_builder_container_page_type != 'default'){

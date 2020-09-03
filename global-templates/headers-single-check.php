@@ -14,17 +14,17 @@ if(!is_user_logged_in() && get_option('usblkv')!='1'){return'';}
 global $us_b_title_shown_already, $us_b_featured_image_already_shown;
 
 // Load Customizer variables
-$understrap_builder_container_type = get_theme_mod( 'understrap_builder_container_type', 'container');
-$understrap_builder_container_single_type = get_theme_mod( 'understrap_builder_container_single_type', 'default');
+$understrap_builder_container_type = get_option( 'understrap_builder_container_type', 'container');
+$understrap_builder_container_single_type = get_option( 'understrap_builder_container_single_type', 'default');
 
-$understrap_builder_headers_single = get_theme_mod( 'understrap_builder_headers_single', '');
-$understrap_builder_headers_single_text = get_theme_mod( 'understrap_builder_headers_single_text', '');
-$understrap_builder_comments_display = get_theme_mod( 'understrap_builder_comments_display', '');
+$understrap_builder_headers_single = get_option( 'understrap_builder_headers_single', '');
+$understrap_builder_headers_single_text = get_option( 'understrap_builder_headers_single_text', '');
+$understrap_builder_comments_display = get_option( 'understrap_builder_comments_display', '');
 
 global $builder_default_spacings;
-$understrap_builder_spacings_headers_wrapper = get_theme_mod( 'understrap_builder_spacings_headers_wrapper', $builder_default_spacings );
-$understrap_builder_spacings_headers_title = get_theme_mod( 'understrap_builder_spacings_headers_title', $builder_default_spacings );
-$understrap_builder_spacings_headers_meta = get_theme_mod( 'understrap_builder_spacings_headers_meta', $builder_default_spacings );
+$understrap_builder_spacings_headers_wrapper = get_option( 'understrap_builder_spacings_headers_wrapper', $builder_default_spacings );
+$understrap_builder_spacings_headers_title = get_option( 'understrap_builder_spacings_headers_title', $builder_default_spacings );
+$understrap_builder_spacings_headers_meta = get_option( 'understrap_builder_spacings_headers_meta', $builder_default_spacings );
 
 
 // Container

@@ -20,9 +20,9 @@ $us_b_title_shown_already = false;
 get_header();
 
 // Load Customizer variables
-$understrap_builder_container_type = get_theme_mod( 'understrap_builder_container_type', 'container');
-$understrap_builder_container_archive_type = get_theme_mod( 'understrap_builder_container_archive_type', 'default');
-$understrap_builder_breadcrumbs_page_display = get_theme_mod( 'understrap_builder_breadcrumbs_page_display', '');
+$understrap_builder_container_type = get_option( 'understrap_builder_container_type', 'container');
+$understrap_builder_container_archive_type = get_option( 'understrap_builder_container_archive_type', 'default');
+$understrap_builder_breadcrumbs_page_display = get_option( 'understrap_builder_breadcrumbs_page_display', '');
 
 $understrap_builder_hide_title = get_post_meta(get_the_ID(), '_us_b_hide_title', true);
 

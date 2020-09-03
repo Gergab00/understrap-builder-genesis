@@ -12,15 +12,15 @@ if(!is_user_logged_in() && get_option('usblkv')!='1'){return'';}
 
   
 // Load Customizer variables
-$understrap_builder_container_type = get_theme_mod( 'understrap_builder_container_type', 'container');
-$understrap_builder_container_single_type = get_theme_mod( 'understrap_builder_container_single_type', 'default');
-$understrap_builder_breadcrumbs_container = get_theme_mod( 'understrap_builder_breadcrumbs_container', 'default');
-$understrap_builder_breadcrumbs_archive_bg = get_theme_mod( 'understrap_builder_breadcrumbs_archive_bg', '');
-$understrap_builder_breadcrumbs_archive_align = get_theme_mod( 'understrap_builder_breadcrumbs_archive_align', 'left');
+$understrap_builder_container_type = get_option( 'understrap_builder_container_type', 'container');
+$understrap_builder_container_single_type = get_option( 'understrap_builder_container_single_type', 'default');
+$understrap_builder_breadcrumbs_container = get_option( 'understrap_builder_breadcrumbs_container', 'default');
+$understrap_builder_breadcrumbs_archive_bg = get_option( 'understrap_builder_breadcrumbs_archive_bg', '');
+$understrap_builder_breadcrumbs_archive_align = get_option( 'understrap_builder_breadcrumbs_archive_align', 'left');
 
 global $builder_default_spacings;
-$understrap_builder_spacings_breadcrumbs_wrapper = get_theme_mod( 'understrap_builder_spacings_breadcrumbs_wrapper', $builder_default_spacings );
-$understrap_builder_spacings_breadcrumbs_element = get_theme_mod( 'understrap_builder_spacings_breadcrumbs_element', $builder_default_spacings );
+$understrap_builder_spacings_breadcrumbs_wrapper = get_option( 'understrap_builder_spacings_breadcrumbs_wrapper', $builder_default_spacings );
+$understrap_builder_spacings_breadcrumbs_element = get_option( 'understrap_builder_spacings_breadcrumbs_element', $builder_default_spacings );
 
 
 // Handle container

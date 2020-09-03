@@ -13,8 +13,8 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 
 // Load Customizer variables
-$understrap_builder_container_type = get_theme_mod( 'understrap_builder_container_type', 'container');
-$understrap_builder_container_archive_type = get_theme_mod( 'understrap_builder_container_archive_type', 'default');
+$understrap_builder_container_type = get_option( 'understrap_builder_container_type', 'container');
+$understrap_builder_container_archive_type = get_option( 'understrap_builder_container_archive_type', 'default');
 
 // handle container
 if($understrap_builder_container_archive_type != 'default'){

@@ -12,18 +12,18 @@
 defined( 'ABSPATH' ) || exit;
 
 // Load Customizer variables
-$understrap_builder_comments_header = get_theme_mod( 'understrap_builder_comments_header', '');
-$understrap_builder_comments_label = get_theme_mod( 'understrap_builder_comments_label', 'comment');
-$understrap_builder_comments_text_align = get_theme_mod( 'understrap_builder_comments_text_align', '');
-$understrap_builder_comments_form_order = get_theme_mod( 'understrap_builder_comments_form_order', '');
-$understrap_builder_comments_comment_style = get_theme_mod( 'understrap_builder_comments_comment_style', '');
+$understrap_builder_comments_header = get_option( 'understrap_builder_comments_header', '');
+$understrap_builder_comments_label = get_option( 'understrap_builder_comments_label', 'comment');
+$understrap_builder_comments_text_align = get_option( 'understrap_builder_comments_text_align', '');
+$understrap_builder_comments_form_order = get_option( 'understrap_builder_comments_form_order', '');
+$understrap_builder_comments_comment_style = get_option( 'understrap_builder_comments_comment_style', '');
 
 global $builder_default_spacings;
-$understrap_builder_spacings_comments_outer = get_theme_mod( 'understrap_builder_spacings_comments_outer', $builder_default_spacings );
-$understrap_builder_spacings_comments_title = get_theme_mod( 'understrap_builder_spacings_comments_title', $builder_default_spacings );
-$understrap_builder_spacings_comments_list = get_theme_mod( 'understrap_builder_spacings_comments_list', $builder_default_spacings );
-$understrap_builder_spacings_comments_individual = get_theme_mod( 'understrap_builder_spacings_comments_individual', $builder_default_spacings );
-$understrap_builder_spacings_comments_form = get_theme_mod( 'understrap_builder_spacings_comments_form', $builder_default_spacings );
+$understrap_builder_spacings_comments_outer = get_option( 'understrap_builder_spacings_comments_outer', $builder_default_spacings );
+$understrap_builder_spacings_comments_title = get_option( 'understrap_builder_spacings_comments_title', $builder_default_spacings );
+$understrap_builder_spacings_comments_list = get_option( 'understrap_builder_spacings_comments_list', $builder_default_spacings );
+$understrap_builder_spacings_comments_individual = get_option( 'understrap_builder_spacings_comments_individual', $builder_default_spacings );
+$understrap_builder_spacings_comments_form = get_option( 'understrap_builder_spacings_comments_form', $builder_default_spacings );
 
 // Handle text align
 $us_b_comments_class = '';

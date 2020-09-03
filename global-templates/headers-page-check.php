@@ -15,16 +15,16 @@ global $us_b_title_shown_already, $us_b_featured_image_already_shown;
 $us_b_page_id = get_queried_object_id();
 
 // Load Customizer variables
-$understrap_builder_container_type = get_theme_mod( 'understrap_builder_container_type', 'container');
-$understrap_builder_container_page_type = get_theme_mod( 'understrap_builder_container_page_type', 'default');
+$understrap_builder_container_type = get_option( 'understrap_builder_container_type', 'container');
+$understrap_builder_container_page_type = get_option( 'understrap_builder_container_page_type', 'default');
 
-$understrap_builder_headers_page = get_theme_mod( 'understrap_builder_headers_page', '');
-$understrap_builder_headers_page_text = get_theme_mod( 'understrap_builder_headers_page_text', '');
+$understrap_builder_headers_page = get_option( 'understrap_builder_headers_page', '');
+$understrap_builder_headers_page_text = get_option( 'understrap_builder_headers_page_text', '');
 
 global $builder_default_spacings;
-$understrap_builder_spacings_headers_wrapper = get_theme_mod( 'understrap_builder_spacings_headers_wrapper', $builder_default_spacings );
-$understrap_builder_spacings_headers_title = get_theme_mod( 'understrap_builder_spacings_headers_title', $builder_default_spacings );
-$understrap_builder_spacings_headers_meta = get_theme_mod( 'understrap_builder_spacings_headers_meta', $builder_default_spacings );
+$understrap_builder_spacings_headers_wrapper = get_option( 'understrap_builder_spacings_headers_wrapper', $builder_default_spacings );
+$understrap_builder_spacings_headers_title = get_option( 'understrap_builder_spacings_headers_title', $builder_default_spacings );
+$understrap_builder_spacings_headers_meta = get_option( 'understrap_builder_spacings_headers_meta', $builder_default_spacings );
 
 
 // Unique page override header meta option

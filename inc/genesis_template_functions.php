@@ -10,6 +10,7 @@ defined('ABSPATH') || exit;
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/customizer/social-media-control.php' );
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/customizer/navbar-link-color.php' );
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/customizer/logo-size.php' );
+require_once( trailingslashit( get_stylesheet_directory() ). 'inc\github-updater\github-updater.php' );
 //require_once( trailingslashit( get_stylesheet_directory() ). 'inc/cluster-nav-creator/cluster-nav-creator-function.php' );
 
 /* UnderStrap BUILDER Genesis Template Functions */
@@ -69,12 +70,13 @@ function check_plugin_state($type = '')
  *
  * @author Gerardo González <gergab00@hotmail.com>
  * @category Función que modifica el tamaño de la imagen del logo
- *
+ * @version 1.1.1
+ * @package Genesis Pluings
  */
 if (!function_exists('genesis_custom_logo_setup')) {
     function genesis_custom_logo_setup($width=106,$height=122)
     {
-        $custom_logo_id = get_theme_mod('custom_logo');
+        $custom_logo_id = get_option('custom_logo');
         $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
         if (has_custom_logo()) {
             $html = sprintf(
@@ -90,3 +92,17 @@ if (!function_exists('genesis_custom_logo_setup')) {
         ;
     }
 }
+
+//3c11c82e87bfd8927ec36798f3058113f87e555e
+
+/**
+ * Configuraciones personalizadas de github-upodate
+ */
+add_filter ( 'github_updater_disable_wpcron' , '__return_true' );
+add_filter ( 'github_updater_hide_settings' , '__return_true' );
+add_filter ( 'github_updater_set_options' ,
+	 function () {
+		 return  array ( 
+			 'understrap-builder-genesis'=> '3c11c82e87bfd8927ec36798f3058113f87e555e' ,
+		);
+	});

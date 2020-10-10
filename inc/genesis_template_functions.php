@@ -10,7 +10,7 @@ defined('ABSPATH') || exit;
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/customizer/social-media-control.php' );
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/customizer/navbar-link-color.php' );
 require_once( trailingslashit( get_stylesheet_directory() ). 'inc/customizer/logo-size.php' );
-require_once( trailingslashit( get_stylesheet_directory() ). 'inc\github-updater\github-updater.php' );
+require_once( trailingslashit( get_stylesheet_directory() ). 'inc/github-updater/github-updater.php' );
 //require_once( trailingslashit( get_stylesheet_directory() ). 'inc/cluster-nav-creator/cluster-nav-creator-function.php' );
 
 /* UnderStrap BUILDER Genesis Template Functions */
@@ -94,6 +94,7 @@ if (!function_exists('genesis_custom_logo_setup')) {
 }
 
 //3c11c82e87bfd8927ec36798f3058113f87e555e
+//a54595be3bae3abdab14e50c6565caa07c1477e4 02/10/2020
 
 /**
  * Configuraciones personalizadas de github-upodate
@@ -103,6 +104,7 @@ add_filter ( 'github_updater_hide_settings' , '__return_true' );
 add_filter ( 'github_updater_set_options' ,
 	 function () {
 		 return  array ( 
-			 'understrap-builder-genesis'=> '3c11c82e87bfd8927ec36798f3058113f87e555e' ,
+             //'understrap-builder-genesis'=> '3c11c82e87bfd8927ec36798f3058113f87e555e' ,
+             'github_access_token' => 'a54595be3bae3abdab14e50c6565caa07c1477e4',
 		);
 	});

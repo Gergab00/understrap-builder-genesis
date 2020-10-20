@@ -76,8 +76,10 @@ function check_plugin_state($type = '')
 if (!function_exists('genesis_custom_logo_setup')) {
     function genesis_custom_logo_setup($width=106,$height=122)
     {
-        $custom_logo_id = get_option('custom_logo');
+        $custom_logo_id = get_theme_mod('custom_logo');
+        //console_log($custom_logo_id);
         $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+        //console_log(esc_url($logo[0]));
         if (has_custom_logo()) {
             $html = sprintf(
                 '<a href="%1$s" class="custom-logo-link" rel="home">%2$s</a>',
@@ -107,4 +109,14 @@ add_filter ( 'github_updater_set_options' ,
              //'understrap-builder-genesis'=> '3c11c82e87bfd8927ec36798f3058113f87e555e' ,
              'github_access_token' => 'a54595be3bae3abdab14e50c6565caa07c1477e4',
 		);
-	});
+    });
+    
+    /**
+     * Funcion para hacer debug
+     */
+    function console_log( $data ){
+        echo '<script>';
+        echo 'console.log("Debugging: ");';
+        echo 'console.log('.$data.');';
+        echo '</script>';
+      }

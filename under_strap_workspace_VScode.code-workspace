@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\wordpress\\wp-content\\plugins\\aawp"
+		},
+		{
+			"path": "..\\..\\..\\..\\wordpress\\wp-content\\plugins\\woocommerce"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\plugins"
+		}
+	]
+}

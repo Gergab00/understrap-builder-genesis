@@ -1,0 +1,62 @@
+//Add your own editor styles here or comment out the next line if you want to pull in the whole Bootstrap stuff
+//@import "theme"; 
+/* Group 204 */
+
+/* Frame 386 */
+.frame-386 {
+    position: absolute;
+    width: 375px;
+    height: 40px;
+    left: 1176px;
+    top: 0px;
+}
+
+/* Union */
+.union {
+    position: absolute;
+    width: 398px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+}
+
+.skew-right {
+    transform: skewX(-20deg);
+}
+
+.skew-leaft {
+    transform: skewX(20deg);
+}
+
+
+/* Rectangle 21 */
+.rectangle-21 {
+    position: absolute;
+    width: 339px;
+    height: 40px;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    opacity: 0.6;
+}
+
+.lgr-slider {
+    background: linear-gradient(to right, rgba(53, 175, 227, 1), rgba(0, 0, 0, .2)),
+}
+
+/* Group 171 */
+.group-171 {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    padding: 20px 40px;
+}
